@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(131, 192, 131);
+}
+#panel {
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+}
+#ptop {
+  width: 100%;
+  height: 80px;
+  padding: 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(30, 80, 30);
+  color: #fff;
+}
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.elem h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.box {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: rgb(36, 170, 36);
+  font-weight: bolder;
+  font: size 15px;
+}
+#pbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+.bubble {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+}
+.bubble:hover {
+  cursor: pointer;
+  background-color: rgb(13, 78, 13);
+}
+.gameOverContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gameOver {
+  color: red;
+  font-size: 35px;
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+#gameOver:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.score {
+  margin-top: 20px;
+  color: springgreen;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #panel {
+    width: 100%;
+    height: 100%;
+  }
+
+  #ptop {
+    padding: 0 10px;
+  }
+}
